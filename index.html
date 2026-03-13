@@ -3,67 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seif Mohamed | Portfolio 2026</title>
+    <title>Seif Mohamed Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* CORE COLORS - High Contrast */
         :root {
-            --pdf-slate: #243447; /* Matches your PDF background */
-            --electric-purple: #8b5cf6;
-            --soft-bg: #fdfaf1; /* Creamy white background */
-            --text-dark: #1a202c;
-            --text-light: #ffffff;
+            --dark-slate: #1a2634;  /* Deep dark background from your PDF */
+            --bright-purple: #a855f7; /* High-visibility Purple */
+            --pure-white: #ffffff;
+            --soft-gray: #f1f5f9;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--soft-bg);
-            color: var(--text-dark);
+            font-family: Arial, sans-serif;
+            background-color: var(--pure-white);
+            color: var(--dark-slate);
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
 
-        /* Hero Header */
+        /* Hero Header - Dark Background */
         header {
-            background-color: var(--pdf-slate);
-            color: var(--text-light);
-            padding: 100px 20px;
+            background-color: var(--dark-slate);
+            color: var(--pure-white);
+            padding: 60px 20px;
             text-align: center;
-            border-bottom: 10px solid var(--electric-purple);
+            border-bottom: 10px solid var(--bright-purple);
         }
 
         .profile-img {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
-            border: 6px solid var(--electric-purple);
-            margin-bottom: 25px;
-            object-fit: cover;
-            box-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+            border: 5px solid var(--bright-purple);
+            margin-bottom: 20px;
+            background-color: #333; /* Placeholder color if image fails */
         }
 
-        h1 { font-size: 4rem; margin: 0; letter-spacing: -2px; text-transform: uppercase; }
-        .tagline { color: var(--electric-purple); font-weight: 800; font-size: 1.5rem; margin-top: 10px; }
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
 
-        .container { max-width: 1100px; margin: auto; padding: 60px 20px; }
+        h1 { font-size: 3rem; margin: 0; color: var(--pure-white); }
+        .purple-text { color: var(--bright-purple); font-weight: bold; font-size: 1.2rem; text-transform: uppercase; }
 
-        /* Content Blocks */
-        section { margin-bottom: 80px; }
-        h2 { font-size: 2.5rem; color: var(--pdf-slate); border-bottom: 4px solid var(--electric-purple); display: inline-block; margin-bottom: 40px; }
-
-        .card {
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-            border: 1px solid #e2e8f0;
+        /* Content Sections */
+        .section-title {
+            color: var(--dark-slate);
+            font-size: 2rem;
+            border-left: 8px solid var(--bright-purple);
+            padding-left: 15px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
         }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .info-card {
+            background: var(--soft-gray);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+        }
 
+        /* Project Image Styling */
         .project-img {
             width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 3px solid var(--dark-slate);
+            display: block;
+        }
+
+        /* Contact Footer */
+        .contact-box {
+            background-color: var(--dark-slate);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
             border-radius: 20px;
-            margin-top: 25px;
-            border: 5px solid var(--pdf-slate);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2
+        }
+
+        .contact-box a { color: var(--bright-purple); text-decoration: none; font-weight: bold; font-size: 1.2rem; }
+
+        footer { text-align: center; padding: 30px; color: #777; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="profile.jpg" alt="Seif Mohamed" class="profile-img">
+        <h1>SEIF MOHAMED</h1>
+        <p class="purple-text">Audio Engineer & Data Analyst</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2 class="section-title">Who Am I</h2>
+            <div class="info-card">
+                <p>Born in 2006. I am an experienced Audio Engineer specializing in <strong>mixing and mastering</strong> high-quality audio output. I work with various instruments and provide stems to bring any vocal or instrumental to life through meticulous enhancement.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Featured Project</h2>
+            <div class="info-card">
+                <h3>MAT-201 (160 BPM)</h3>
+                <p>A melodic Hip-Hop/Trap instrument produced from scratch with multiple switches and custom tunes.</p>
+                <img src="Screenshot 2026-03-12 204159.png" alt="DAW Project Session" class="project-img">
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education & Skills</h2>
+            <div class="info-card">
+                <p><strong><i class="fas fa-university"></i> Sadat Academy:</strong> BIS Faculty (2025-Present)</p>
+                <p><strong><i class="fas fa-chart-line"></i> DEPI @ EYOUTH:</strong> Data Analysis Certification</p>
+                <p><strong><i class="fas fa-music"></i> Berklee @ Coursera:</strong> Music Production & Mastering</p>
+                <hr>
+                <p><strong>Genres:</strong> Trap, Jazz, Hip-Hop, Metal, and more.</p>
+            </div>
+        </section>
+
+        <section class="contact-box">
+            <h2>Let's Work Together</h2>
+            <p>Whatever you describe will be delivered; I'll turn words into beats.</p>
+            <p>Phone: (+20) 1000110661</p>
+            <p>Email: <a href="mailto:SEIFELSEWEDY@OUTLOOK.COM">SEIFELSEWEDY@OUTLOOK.COM</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Seif Mohamed | Professional Portfolio
+    </footer>
+
+</body>
+</html>
