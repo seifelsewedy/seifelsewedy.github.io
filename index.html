@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seif Mohamed | Audio & Data Wizard</title>
+    <title>Seif Mohamed | Audio & Data Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary-purple: #8b5cf6; /* Vibrant Violet */
+            --primary-purple: #8b5cf6;
             --soft-purple: #f5f3ff;
             --dark-purple: #4c1d95;
             --accent-pink: #ec4899;
@@ -15,7 +15,7 @@
         }
 
         body {
-            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Inter', sans-serif; /* Playful font stack */
+            font-family: 'Inter', -apple-system, sans-serif;
             background-color: var(--soft-purple);
             color: var(--text-main);
             margin: 0;
@@ -24,93 +24,61 @@
 
         .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
 
-        /* Playful Header */
         header {
-            padding: 100px 0 60px;
+            padding: 80px 0 40px;
             text-align: center;
             background: linear-gradient(135deg, #ddd6fe 0%, #f5f3ff 100%);
-            border-bottom-left-radius: 100px;
-            border-bottom-right-radius: 100px;
-            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.1);
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
         }
 
         .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 40px; /* Squircle shape */
-            border: 5px solid white;
+            width: 150px;
+            height: 150px;
+            border-radius: 40px;
+            border: 4px solid white;
             transform: rotate(-3deg);
-            transition: 0.3s;
+            box-shadow: 8px 8px 0px var(--primary-purple);
             object-fit: cover;
-            box-shadow: 10px 10px 0px var(--primary-purple);
         }
 
-        .profile-img:hover { transform: rotate(0deg) scale(1.05); }
+        h1 { font-size: 3rem; margin: 15px 0 5px; color: var(--dark-purple); }
+        .badge { background: var(--primary-purple); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; }
 
-        h1 { font-size: 3.5rem; margin: 15px 0 5px; color: var(--dark-purple); }
-        
-        .badge-container { display: flex; justify-content: center; gap: 10px; margin-top: 10px; }
-        .badge {
-            background: var(--primary-purple);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-
-        /* Sections */
         section { padding: 40px 0; }
-        h2 { 
-            font-size: 2.2rem; 
-            color: var(--dark-purple); 
-            display: inline-block;
-            position: relative;
-        }
-        h2::after {
-            content: "";
-            position: absolute;
-            bottom: 5px;
-            left: 0;
-            width: 100%;
-            height: 12px;
-            background: rgba(236, 72, 153, 0.2); /* Pink highlight */
-            z-index: -1;
-        }
+        h2 { font-size: 2rem; color: var(--dark-purple); margin-bottom: 30px; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 
         .card {
             background: white;
-            padding: 30px;
-            border-radius: 30px;
-            border: 3px solid transparent;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-            transition: 0.3s ease;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: 0.3s;
         }
 
-        .card:hover { 
-            border-color: var(--primary-purple); 
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
+        .card:hover { transform: translateY(-5px); }
+
+        /* Project Image Styling */
+        .project-display {
+            width: 100%;
+            border-radius: 15px;
+            margin: 15px 0;
+            border: 2px solid var(--soft-purple);
         }
 
-        .card i { font-size: 2.5rem; color: var(--accent-pink); margin-bottom: 20px; }
-
-        /* Contact Box */
-        .contact-fun {
+        .contact-box {
             background: var(--dark-purple);
             color: white;
-            padding: 60px;
-            border-radius: 50px;
+            padding: 50px;
+            border-radius: 40px;
             text-align: center;
-            margin-bottom: 50px;
         }
 
-        .contact-fun a { color: var(--accent-pink); text-decoration: none; font-weight: bold; font-size: 1.2rem; }
+        .contact-box a { color: var(--accent-pink); text-decoration: none; font-weight: bold; }
 
-        footer { text-align: center; padding: 40px; color: var(--primary-purple); font-weight: bold; }
-
+        footer { text-align: center; padding: 30px; color: var(--primary-purple); font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -119,67 +87,54 @@
         <div class="container">
             <img src="profile.jpg" alt="Seif Mohamed" class="profile-img">
             <h1>Seif Mohamed</h1>
-            <div class="badge-container">
-                <span class="badge">Audio Engineer 🎧</span>
-                <span class="badge">Data Analyst 📊</span>
-            </div>
-            <p style="margin-top: 25px; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Born in 2006[cite: 3]. I adapt to any genre and bring sounds to life through endless processes of enhancements[cite: 3, 12].
-            </p>
+            <span class="badge">Audio Engineer & Data Analyst</span>
+            <p style="margin-top: 20px; color: #4b5563;">Born in 2006. Adapting to any genre and bringing sound to life[cite: 3].</p>
         </div>
     </header>
 
     <div class="container">
         <section>
-            <h2>My Superpowers</h2>
+            <h2>Who Am I</h2>
+            <div class="card">
+                <p>I am an experienced Audio Engineer specializing in mixing and mastering high-quality audio output[cite: 10, 13]. I work with various instruments and provide stems to bring any vocal or instrumental to life[cite: 10, 12].</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Project</h2>
+            <div class="card">
+                <h3>mat-201</h3>
+                <p>A 160BPM Melodic Hip-Hop/Trap instrument produced from scratch with multiple switches and different tunes[cite: 34, 35].</p>
+                <img src="project-screenshot.png" alt="mat-201 DAW Session" class="project-display">
+            </div>
+        </section>
+
+        <section>
             <div class="grid">
                 <div class="card">
-                    <i class="fas fa-compact-disc"></i>
-                    <h3>The Beat Maker</h3>
-                    <p>I turn words into beats[cite: 20]. Whether it’s Trap, Jazz, or Metal, if your ears wish for it, I deliver it[cite: 23].</p>
+                    <h3><i class="fas fa-university"></i> Education</h3>
+                    <p><strong>Sadat Academy:</strong> BIS Faculty (2025-Present)[cite: 14, 15].</p>
+                    <p><strong>Berklee:</strong> Music Production specialized programs via Coursera[cite: 28, 29].</p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-brain"></i>
-                    <h3>The Data Solver</h3>
-                    <p>Currently deep in the BIS Faculty at Sadat Academy [cite: 14, 15] and conquering Data Analysis at DEPI[cite: 26, 27].</p>
+                    <h3><i class="fas fa-chart-line"></i> Data Analysis</h3>
+                    <p>Completed Data Analysis courses at <strong>DEPI @ EYOUTH</strong>[cite: 26, 27].</p>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>Cool Stuff I've Made</h2>
-            <div class="card" style="border-left: 10px solid var(--accent-pink);">
-                <h3>Project: mat-201</h3>
-                <p>A 160BPM Melodic Hip-Hop/Trap instrument produced from scratch[cite: 34, 35]. It’s got multiple switches and custom tunes!</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Learning Journey</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Berklee Certified</h3>
-                    <p>Specialized programs in Mixing, Mastering, and Production via Coursera[cite: 28, 29].</p>
-                </div>
-                <div class="card">
-                    <h3>Attention to Detail</h3>
-                    <p>I focus on the tiny things to ensure the highest quality audio output every time[cite: 10, 19].</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="contact-fun">
-                <h2>Let's Make Magic! ✨</h2>
-                <p>Whatever you describe will be delivered[cite: 20].</p>
-                <p>📧 <a href="mailto:SEIFELSEWEDY@OUTLOOK.COM">SEIFELSEWEDY@OUTLOOK.COM</a></p>
+            <div class="contact-box">
+                <h2>Let's Work Together!</h2>
+                <p>Whatever you describe will be delivered; I'll turn words into beats[cite: 20].</p>
+                <p>📧 <a href="mailto:SEIFELSEWEDY@OUTLOOK.COM">SEIFELSEWEDY@OUTLOOK.COM</a> [cite: 40]</p>
                 <p>📞 (+20) 1000110661 [cite: 39]</p>
             </div>
         </section>
     </div>
 
     <footer>
-        Handcrafted by Seif Mohamed &copy; 2022-2026 [cite: 4, 41]
+        &copy; 2022-2026 Seif Mohamed[cite: 4].
     </footer>
 
 </body>
