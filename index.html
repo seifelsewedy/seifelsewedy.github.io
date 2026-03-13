@@ -3,68 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seif Mohamed | Audio Engineer & Data Analyst</title>
+    <title>Seif Mohamed | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            /* Palette inspired by your PDF colors */
-            --deep-slate: #2c3e50;
-            --muted-teal: #3d5a6c;
-            --vibrant-purple: #8b5cf6;
-            --cream: #fdfaf1;
-            --text-dark: #1a202c;
-            --text-light: #edf2f7;
+            --primary-purple: #6d28d9; /* Deep Purple */
+            --bg-color: #f5f3ff;       /* Soft Purple Tint */
+            --card-white: #ffffff;
+            --dark-slate: #1e293b;     /* Deep Slate from your PDF */
+            --accent-pink: #db2777;
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--cream);
-            color: var(--text-dark);
+            background-color: var(--bg-color);
+            color: var(--dark-slate);
             margin: 0;
-            line-height: 1.6;
+            padding: 0;
         }
 
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-
-        /* Header Section */
+        /* Header with Dark Slate background to match your PDF style */
         header {
-            padding: 100px 0 60px;
+            background-color: var(--dark-slate);
+            color: white;
+            padding: 80px 20px;
             text-align: center;
-            background-color: var(--deep-slate);
-            color: var(--text-light);
-            border-bottom-left-radius: 80px;
-            border-bottom-right-radius: 80px;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            border-bottom: 8px solid var(--primary-purple);
         }
 
         .profile-img {
             width: 180px;
             height: 180px;
             border-radius: 50%;
-            border: 6px solid var(--vibrant-purple);
-            object-fit: cover;
+            border: 5px solid var(--primary-purple);
             margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+            object-fit: cover;
         }
 
-        h1 { font-size: 3.5rem; margin: 0; letter-spacing: -1px; }
-        .subtitle { font-size: 1.2rem; color: var(--vibrant-purple); font-weight: bold; text-transform: uppercase; margin-top: 10px; }
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
 
-        /* General Section Styling */
-        section { padding: 60px 0; }
-        h2 { font-size: 2.2rem; color: var(--deep-slate); border-bottom: 3px solid var(--vibrant-purple); display: inline-block; margin-bottom: 40px; }
+        h1 { font-size: 3.5rem; margin: 0; text-transform: uppercase; }
+        .tagline { color: var(--primary-purple); font-weight: bold; font-size: 1.2rem; }
 
         .card {
-            background: white;
+            background: var(--card-white);
             padding: 30px;
-            border-radius: 30px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             margin-bottom: 30px;
-            border: 1px solid #eee;
+            border-left: 10px solid var(--primary-purple);
         }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .project-img {
+            width: 100%;
+            border-radius: 15px;
+            margin-top: 20px;
+            border: 2px solid #ddd;
+        }
 
-        /* Project Image Section */
-        .project-image {
-            width: 10
+        .contact-section {
+            background: var(--primary-purple);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .contact-section a { color: #fdfaf1; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="profile.jpg" alt="Seif Mohamed" class="profile-img">
+        <h1>SEIF MOHAMED</h1>
+        <p class="tagline">AUDIO ENGINEER | 2022-2026</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <div class="card">
+                <h2>WHO AM I</h2>
+                <p>Born in 2006, I am an experienced Audio Engineer specializing in mixing and mastering high-quality audio output. I work with various instruments and provide stems to bring any vocal or instrumental to life through endless processes of enhancements.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <h2>FEATURED PROJECT: mat-201</h2>
+                <p>A 160BPM Melodic Hip-Hop/Trap instrument produced from scratch with multiple switches and different tunes.</p>
+                <img src="Screenshot 2026-
