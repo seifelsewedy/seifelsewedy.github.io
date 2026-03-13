@@ -3,134 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seif Mohamed | Audio & Data</title>
+    <title>Seif Mohamed | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --bg: #0f172a;
-            --card-bg: #1e293b;
-            --accent: #38bdf8;
-            --text-main: #f1f5f9;
-            --text-dim: #94a3b8;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --accent: #2563eb;
+            --text-main: #1e293b;
+            --text-dim: #64748b;
+            --border: #e2e8f0;
         }
 
         body {
-            font-family: 'Inter', system-ui, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--bg);
             color: var(--text-main);
             margin: 0;
             line-height: 1.6;
         }
 
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
-        /* Hero Section */
+        /* Header / Hero */
         header {
-            height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 100px 0;
             text-align: center;
-            background: linear-gradient(to bottom, rgba(15,23,42,0.8), var(--bg)), 
-                        url('studio-bg.jpg') center/cover; /* RENAME TO YOUR STUDIO PHOTO */
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
         }
 
         .profile-img {
-            width: 180px;
-            height: 180px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            border: 4px solid var(--accent);
+            border: 3px solid var(--accent);
             margin-bottom: 20px;
             object-fit: cover;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
 
-        h1 { font-size: 3.5rem; margin: 10px 0; letter-spacing: -1px; }
-        .tagline { font-size: 1.2rem; color: var(--accent); font-weight: 600; text-transform: uppercase; }
+        h1 { font-size: 3rem; margin: 10px 0; color: #0f172a; }
+        .tagline { color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
 
         /* Sections */
-        section { padding: 80px 0; }
-        h2 { font-size: 2rem; border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 40px; }
+        section { padding: 60px 0; }
+        h2 { font-size: 1.8rem; margin-bottom: 30px; display: flex; align-items: center; gap: 10px; }
+        h2::after { content: ""; flex: 1; height: 1px; background: var(--border); }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
 
         .card {
             background: var(--card-bg);
             padding: 30px;
-            border-radius: 16px;
-            border: 1px solid #334155;
-            transition: 0.3s;
-        }
-
-        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
-        .card i { font-size: 2rem; color: var(--accent); margin-bottom: 20px; }
-
-        .project-img { width: 100%; border-radius: 8px; margin-top: 15px; }
-
-        /* Contact Section */
-        .contact-box {
-            background: var(--accent);
-            color: var(--bg);
-            padding: 40px;
-            border-radius: 16px;
-            text-align: center;
-        }
-
-        .contact-box a { color: var(--bg); font-weight: bold; text-decoration: none; font-size: 1.2rem; }
-
-        @media (max-width: 768px) { h1 { font-size: 2.5rem; } }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="container">
-            <img src="profile.jpg" alt="Seif Mohamed" class="profile-img"> <p class="tagline">Audio Engineer & Data Analyst</p>
-            <h1>Seif Mohamed</h1>
-            <p style="max-width: 600px; margin: 20px auto; color: var(--text-dim);">
-                Born in 2006. I aim to bring any vocal or instrumental to life through endless processes of enhancements.
-            </p>
-        </div>
-    </header>
-
-    <div class="container">
-        <section id="audio">
-            <h2>Audio Engineering</h2>
-            <div class="grid">
-                <div class="card">
-                    <i class="fas fa-sliders"></i>
-                    <h3>Mixing & Mastering</h3>
-                    <p>Experienced in delivering high-quality audio output and providing stems for various instruments.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-music"></i>
-                    <h3>Genre Versatility</h3>
-                    <p>Producing from scratch in genres including Jazz, Trap, Hip-Hop, and Metal.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="data">
-            <h2>Data Analysis</h2>
-            <div class="grid">
-                <div class="card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Analytics & Business</h3>
-                    <p>Currently studying in the BIS Faculty at Sadat Academy for Management Sciences.</p>
-                    <img src="data-chart.jpg" alt="Data Project" class="project-img"> </div>
-                <div class="card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Education</h3>
-                    <ul>
-                        <li>DEPI @ EYouth Data Analysis Courses</li>
-                        <li>Berklee Specialized Programs via Coursera</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="contact-box">
-                <h2>Let's Work Together</h2>
-                <p>Whatever you describe will be delivered; I'll turn words into beats.</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:SEIFELSEWEDY@OUTLOOK.COM">SEIFELSEWEDY@OUTLOOK.COM</a></p>
-                <p><i class="fas fa-phone"></i> (+20)
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,
